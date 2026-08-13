@@ -398,39 +398,32 @@ Conditions for accelerating growth
 Conditions for consolidating profitability
 Risks and monitoring metrics
 
-## 16. Example Company Data
+## 16. Example company data
 
-The repository includes fictional demo company data under:
+The repository includes a fictional company KPI dataset used for the prototype:
 
-data/sample_company_data.csv
+`data/sample_company_data.csv`
 
-The exact fields and values in the CSV should be treated as the source of truth for the demo.
+The dataset contains previous-period and current-period business metrics, including:
 
-The application dynamically selects metrics relevant to the question rather than assuming every metric is relevant to every business question.
+| Metric | Previous | Current |
+|---|---:|---:|
+| Operating Margin | 12.0% | 14.0% |
+| Gross Margin | 48.2% | 48.0% |
+| Revenue | 5.40 | 6.10 |
+| Market Share | 14.0% | 18.0% |
+| Cost per Acquisition (CAC) | 142.00 | 125.00 |
+| Customer Count | 2,850 | 3,200 |
+| Lifetime Value (LTV) | 650.00 | 680.00 |
+| Days Sales Outstanding (DSO) | 44.00 | 38.00 |
+| Capacity Utilization | 70.0% | 76.0% |
+| On-Time Delivery | 88.0% | 93.0% |
+| Defect Rate | 1.6% | 1.1% |
+| Employee Attrition | 13.0% | 11.0% |
 
-For example:
+The dataset is fictional and is included only to demonstrate data-grounded board discussions.
 
-Growth / profitability question
-
-Potentially relevant metrics may include:
-
-Revenue
-Operating Margin
-Gross Margin
-Market Share
-Customer Count
-CAC
-LTV
-Working-capital question
-
-Potentially relevant metrics may include:
-
-DSO
-Cash
-Free Cash Flow
-Debt
-
-The system does not intentionally inject unrelated metrics simply because they exist in the uploaded CSV.
+Upload the CSV through the application before asking questions about company performance.
 
 ## 17. Design Decisions
 
