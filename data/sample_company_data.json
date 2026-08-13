@@ -1,0 +1,11 @@
+{
+  "company": "Northwind Retail (fictional demo)",
+  "revenue": 10800000,
+  "gross_margin": 0.36,
+  "ebitda": 1200000,
+  "marketing_spend": 1600000,
+  "market_share": 17.8,
+  "customer_acquisition_cost": 145,
+  "churn": 0.037,
+  "notes": "Q3 margin compression vs Q2 gross_margin 0.40"
+}
