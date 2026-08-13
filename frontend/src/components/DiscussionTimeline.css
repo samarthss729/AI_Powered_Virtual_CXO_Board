@@ -1,0 +1,26 @@
+.discussion-timeline {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.round-divider {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding: 0.5rem 0 0.15rem;
+  border-bottom: 1px dashed var(--line);
+  margin-bottom: 0.25rem;
+}
+
+.round-divider.round-2 {
+  margin-top: 0.5rem;
+  color: var(--ink);
+}
+
+.discussion-empty {
+  color: var(--ink-soft);
+  line-height: 1.55;
+  padding: 0.35rem 0 0.2rem;
+}

@@ -1,0 +1,44 @@
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.35rem 0 0.5rem;
+  animation: rise 450ms ease both;
+}
+
+.board-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.board-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
+}
+
+.board-session-title {
+  margin-top: 0.45rem;
+  color: var(--ink-soft);
+}
+
+.status-pill {
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-pill.ok {
+  background: rgba(15, 106, 90, 0.12);
+  color: var(--accent);
+}
+
+.status-pill.warn {
+  background: rgba(184, 106, 43, 0.16);
+  color: #8a4d16;
+}

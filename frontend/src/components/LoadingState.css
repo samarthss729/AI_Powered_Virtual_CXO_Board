@@ -1,0 +1,40 @@
+.loading-state {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(15, 106, 90, 0.2);
+  background: rgba(15, 106, 90, 0.08);
+  animation: rise 360ms ease both;
+}
+
+.loading-orb {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid rgba(15, 106, 90, 0.2);
+  border-top-color: var(--accent);
+  animation: spin 0.9s linear infinite;
+}
+
+.loading-state h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.45rem;
+}
+
+.loading-state ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

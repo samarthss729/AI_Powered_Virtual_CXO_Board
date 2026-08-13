@@ -1,0 +1,215 @@
+:root {
+  --ink: #14212b;
+  --ink-soft: #3a4a57;
+  --paper: #f3efe6;
+  --paper-2: #e7edf0;
+  --panel: rgba(255, 252, 246, 0.88);
+  --line: rgba(20, 33, 43, 0.12);
+  --accent: #0f6a5a;
+  --accent-2: #b86a2b;
+  --danger: #9b2c2c;
+  --ceo: #14212b;
+  --cfo: #1f4e79;
+  --cmo: #0f6a5a;
+  --coo: #5c6b2f;
+  --cso: #7a2e3a;
+  --synth: #8a5a16;
+  --shadow: 0 18px 50px rgba(20, 33, 43, 0.08);
+  --radius: 18px;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background: var(--paper);
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+.main-stage {
+  position: relative;
+  overflow: auto;
+}
+
+.stage-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(15, 106, 90, 0.14), transparent 34%),
+    radial-gradient(circle at 88% 0%, rgba(184, 106, 43, 0.16), transparent 30%),
+    linear-gradient(160deg, #f7f2e8 0%, #edf2f4 48%, #e8eee8 100%);
+  pointer-events: none;
+}
+
+.stage-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px 28px 64px;
+  display: grid;
+  gap: 18px;
+}
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1.15rem;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease, opacity 160ms ease;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #f7fffb;
+  font-weight: 700;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.panel-label {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+}
+
+.panel-label h3 {
+  font-size: 1.35rem;
+}
+
+.panel-label p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.2rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+  background: var(--ink);
+}
+
+.role-badge.ceo { background: var(--ceo); }
+.role-badge.cfo { background: var(--cfo); }
+.role-badge.cmo { background: var(--cmo); }
+.role-badge.coo { background: var(--coo); }
+.role-badge.cso { background: var(--cso); }
+.role-badge.synthesis { background: var(--synth); }
+
+.boot-copy,
+.continue-hint {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin-top: 1rem;
+}
+
+.current-question-panel {
+  margin-bottom: 0.5rem;
+}
+
+.current-question-text {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.empty-hero {
+  padding: 2.5rem 1.5rem;
+  border: 1px dashed rgba(20, 33, 43, 0.22);
+  border-radius: var(--radius);
+  background: rgba(255, 252, 246, 0.7);
+  display: grid;
+  gap: 0.85rem;
+  justify-items: start;
+  animation: rise 420ms ease both;
+}
+
+.empty-hero h3 {
+  font-size: 2rem;
+}
+
+.empty-hero p {
+  max-width: 42rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 920px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .stage-inner {
+    padding: 18px 16px 48px;
+  }
+}

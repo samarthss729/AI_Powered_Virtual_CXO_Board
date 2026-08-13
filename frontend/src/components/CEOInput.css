@@ -1,0 +1,54 @@
+.ceo-panel,
+.upload-panel,
+.discussion-panel,
+.synthesis-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.2rem 1.25rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  animation: rise 480ms ease both;
+}
+
+.ceo-panel form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.ceo-panel textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 110px;
+  border-radius: 14px;
+  border: 1px solid rgba(20, 33, 43, 0.16);
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.ceo-panel textarea:focus {
+  outline: 2px solid rgba(15, 106, 90, 0.28);
+  border-color: rgba(15, 106, 90, 0.45);
+}
+
+.ceo-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ceo-actions p {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  max-width: 28rem;
+}
+
+@media (max-width: 720px) {
+  .ceo-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

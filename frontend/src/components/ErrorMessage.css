@@ -1,0 +1,17 @@
+.error-banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: rgba(155, 44, 44, 0.08);
+  border: 1px solid rgba(155, 44, 44, 0.22);
+  color: #6f1f1f;
+  animation: rise 300ms ease both;
+}
+
+.error-banner p {
+  margin-top: 0.25rem;
+  line-height: 1.45;
+}

@@ -1,0 +1,62 @@
+.sidebar {
+  background:
+    linear-gradient(180deg, rgba(20, 33, 43, 0.96), rgba(20, 33, 43, 0.92)),
+    radial-gradient(circle at top left, rgba(15, 106, 90, 0.35), transparent 45%);
+  color: #f4efe6;
+  padding: 1.5rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 100vh;
+}
+
+.sidebar-brand h1 {
+  font-size: 1.85rem;
+  color: #fff8ee;
+  animation: brand-in 500ms ease both;
+}
+
+.sidebar-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  opacity: 0.7;
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-sub {
+  margin-top: 0.25rem;
+  color: rgba(244, 239, 230, 0.72);
+  font-size: 0.92rem;
+}
+
+.sidebar-new {
+  width: 100%;
+}
+
+.sidebar-section h2 {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 0.7rem;
+}
+
+@keyframes brand-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    min-height: auto;
+  }
+}

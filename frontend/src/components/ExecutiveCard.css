@@ -1,0 +1,81 @@
+.exec-card {
+  border-top: 3px solid var(--ink);
+  padding: 0.95rem 0.2rem 0.35rem;
+  animation: rise 420ms ease both;
+}
+
+.exec-card.role-ceo { border-top-color: var(--ceo); }
+.exec-card.role-cfo { border-top-color: var(--cfo); }
+.exec-card.role-cmo { border-top-color: var(--cmo); }
+.exec-card.role-coo { border-top-color: var(--coo); }
+.exec-card.role-cso { border-top-color: var(--cso); }
+.exec-card.role-synthesis { border-top-color: var(--synth); }
+
+.exec-card-top {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  margin-bottom: 0.7rem;
+}
+
+.exec-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  background: var(--ink);
+}
+
+.exec-avatar.role-ceo { background: var(--ceo); }
+.exec-avatar.role-cfo { background: var(--cfo); }
+.exec-avatar.role-cmo { background: var(--cmo); }
+.exec-avatar.role-coo { background: var(--coo); }
+.exec-avatar.role-cso { background: var(--cso); }
+
+.exec-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.exec-card h4 {
+  font-size: 1.05rem;
+}
+
+.exec-lens {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.round-chip {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.12rem 0.5rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.exec-body {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: var(--ink);
+  padding-left: calc(42px + 0.85rem);
+}
+
+@media (max-width: 640px) {
+  .exec-body {
+    padding-left: 0;
+  }
+}
