@@ -1,4 +1,42 @@
-Quarter,Revenue,Gross_Margin,EBITDA,Marketing_Spend,Market_Share,CAC,Churn
-Q1,10000000,0.42,1800000,1200000,17.5,120,0.028
-Q2,11000000,0.40,1700000,1400000,18.0,132,0.031
-Q3,10800000,0.36,1200000,1600000,17.8,145,0.037
+Metric,Current,Previous,Target
+Revenue,12.5M,11.2M,14M
+EBITDA,1.7M,2.0M,2.2M
+Gross Margin,48%,48.2%,50%
+CAC,125,142,110
+LTV,680,650,700
+Churn,8.2%,9.1%,7%
+Market Share,18%,14%,22%
+Capacity Utilization,91%,84%,90%
+Net Revenue Retention,102%,98%,110%
+Operating Margin,14%,12%,18%
+Free Cash Flow,0.9M,0.4M,1.5M
+Customer Count,3200,2850,4000
+ARPU,320,315,340
+Sales Cycle Length (days),45,52,35
+Employee Headcount,180,165,200
+Employee Attrition,11%,13%,8%
+NPS Score,42,38,55
+Support Ticket Resolution Time (hrs),6.2,7.5,4.0
+Website Conversion Rate,2.8%,2.4%,3.5%
+Monthly Active Users,48000,41000,60000
+Average Deal Size,15200,14100,17000
+Sales Qualified Leads,410,380,500
+Marketing Spend,1.2M,1.0M,1.4M
+R&D Spend,2.1M,1.9M,2.5M
+Inventory Turnover,6.1,5.4,7.0
+Days Sales Outstanding,38,44,30
+Debt to Equity Ratio,0.45,0.52,0.35
+Return on Assets,9.5%,8.1%,12%
+Return on Equity,15%,13%,18%
+Working Capital,3.4M,2.9M,4.0M
+Cash Reserves,5.6M,4.8M,7.0M
+Product Defect Rate,1.1%,1.6%,0.5%
+On-Time Delivery Rate,93%,88%,97%
+Supplier Lead Time (days),18,22,14
+Warehouse Utilization,76%,70%,85%
+Cost per Acquisition,98,110,80
+Email Open Rate,24%,21%,30%
+Social Media Engagement,3.9%,3.2%,5%
+Employee Satisfaction Score,7.8,7.2,8.5
+Training Hours per Employee,14,10,20
+Safety Incident Rate,0.8,1.3,0.3
